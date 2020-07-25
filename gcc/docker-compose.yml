@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  gcc:
+    build: .
+    # image: gcc:latest
+    volumes:
+      - ./c/:/src/c/
+      - ./cpp/:/src/cpp/
+    
+    
+    container_name: gcc-container
+    
+    command: /bin/bash
