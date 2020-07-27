@@ -2,7 +2,7 @@ FROM gcc:latest
 
 LABEL maintainer fenoai
 
-RUN apt-get update && apt-get install -y vim locales xclip \
+RUN apt-get update && apt-get install -y vim locales xclip clang \
     && localedef -f UTF-8 -i ko_KR ko_KR.UTF-8
 
 ENV LC_ALL ko_KR.UTF-8
