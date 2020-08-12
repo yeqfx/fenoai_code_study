@@ -1,7 +1,13 @@
 #include <iostream>
 #include "Timer.h"
-#include "SwapInt.h"
 using namespace std;
+
+inline void SwapValues(int& x, int& y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+}
 
 int main()
 {

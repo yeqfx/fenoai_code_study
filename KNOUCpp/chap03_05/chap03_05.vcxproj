@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b8c550aa-9356-467b-a3bf-4cbf24157ba3}</ProjectGuid>
-    <RootNamespace>chap0304</RootNamespace>
+    <ProjectGuid>{5bf06904-c45f-4593-9261-a4e18b631f9e}</ProjectGuid>
+    <RootNamespace>chap0305</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,13 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="SwapInt.cpp" />
-    <ClCompile Include="Timer.cpp" />
+    <ClInclude Include="PrintRec.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SwapInt.h" />
-    <ClInclude Include="Timer.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrintRec.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
