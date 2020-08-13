@@ -17,15 +17,6 @@ public:
     Complex2& operator += (const Complex2&& c);
     void display() const;
     friend Complex2 operator + (double r, const Complex2& c);
-    friend ostream& operator << (ostream& os, const Complex2& c)
-    {
-        os << "(" << c.rPart;
-        if (c.iPart > 0)
-            os << "+j" << c.iPart;
-        else if (c.iPart < 0)
-            os << "-j" << -c.iPart;
-        os << ")";
-        return os;
-    }
+    friend std::ostream& operator << (std::ostream& os, const Complex2& c);
 };
 

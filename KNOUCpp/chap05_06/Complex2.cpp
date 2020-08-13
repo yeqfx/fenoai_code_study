@@ -60,16 +60,16 @@ Complex2 operator + (double r, const Complex2& c)
     return Complex2(r + c.rPart, c.iPart);
 }
 
-//ostream& operator<<(ostream& os, const Complex2& c)
-//{
-//    os << "(" << c.rPart;
-//    if (c.iPart > 0)
-//        os << "+j" << c.iPart;
-//    else if (c.iPart < 0)
-//        os << "-j" << -c.iPart;
-//    os << ")";
-//    return os;
-//}
+std::ostream& operator<<(std::ostream& os, const Complex2& c)
+{
+    os << "(" << c.rPart;
+    if (c.iPart > 0)
+        os << "+j" << c.iPart;
+    else if (c.iPart < 0)
+        os << "-j" << -c.iPart;
+    os << ")";
+    return os;
+}
 
 void Complex2::display() const
 {
