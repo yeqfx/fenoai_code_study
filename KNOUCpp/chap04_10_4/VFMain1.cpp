@@ -1,6 +1,7 @@
-// copy instructor 복사 생성자
+// 위임 생성자 delegating constructor
 
 #include <iostream>
+#include <initializer_list>
 #include "VecF.h"
 using namespace std;
 
@@ -13,6 +14,12 @@ int main()
     cout << endl;
     v2.print();
     cout << endl;
+    float b[4] = { 1.0f, 2.0f, 3.0f, 4.0f };
+    VecF v3(4, b);
+    v3.print();
+    cout << endl;
+    VecF v4{ 2.0f, 4.0f, 6.0f, 8.0f };
+    v4.print();
 
     return 0;
 }

@@ -1,4 +1,4 @@
-// copy instructor 복사 생성자
+// 이동 생성자 move constructor
 
 #include <iostream>
 #include "VecF.h"

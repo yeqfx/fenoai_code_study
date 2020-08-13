@@ -1,4 +1,4 @@
-// copy instructor 복사 생성자
+// 위임 생성자 delegating constructor
 
 #include <iostream>
 #include "VecF.h"
