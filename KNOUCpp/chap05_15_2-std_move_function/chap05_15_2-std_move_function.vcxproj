@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{adc8fa6f-9303-405f-aa4c-ac61cba6224a}</ProjectGuid>
-    <RootNamespace>chap04104</RootNamespace>
+    <ProjectGuid>{b6b678ab-6491-45bd-8f25-a2133a411413}</ProjectGuid>
+    <RootNamespace>chap05152stdmovefunction</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>chap04_10_4 - delegating constructor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -141,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="VecF.cpp" />
-    <ClCompile Include="VFMain1.cpp" />
+    <ClCompile Include="VFMain3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="VecF.h" />
