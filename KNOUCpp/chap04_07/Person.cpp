@@ -1,3 +1,7 @@
+#include "..\chap06_01_Inheritance1\Person1.h"
+#include "..\chap06_01_Inheritance1\Person1.h"
+#include "..\chap06_01_Inheritance1\Person1.h"
+#include "..\chap06_01_Inheritance1\Person1.h"
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
