@@ -23,9 +23,10 @@ int getFileSize(FILE* fp)
 char* getData(int offset, int size, int* count, FILE* fp)
 {
     char* buffer;
+    fseek(fp, offset, SEEK_SET);
     buffer = malloc(size + 1);
     memset(buffer, 0, size + 1);
-    count = fread(buffer, sizeof(char), size, fp);
+    *count = fread(buffer, sizeof(char), size, fp);
     
     return buffer;
 }
