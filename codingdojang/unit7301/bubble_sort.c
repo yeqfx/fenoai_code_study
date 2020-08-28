@@ -3,19 +3,23 @@
 void bubble_sort(int arr[], int count)
 {
     int temp;
+    int countcount = 0;
 
     for (int i = 0; i < count; i++)
     {
-        for (int j = 0; j < count - 1; j++)
+        for (int j = 0; j < count - 1 - i; j++)
         {
+            countcount++;
             if (arr[j] > arr[j + 1])
             {
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                
             }
         }
     }
+    printf("count : %d\n", countcount);
 }
 
 int main()
