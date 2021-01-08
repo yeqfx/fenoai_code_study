@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -77,10 +78,10 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django2db',
+        'NAME': 'djangostudydb',
         'USER': 'fenoai',
         'PASSWORD': 'd03wjx2jssh',
-        'HOST': '192.168.219.200',
+        'HOST': '192.168.219.150',
         'PORT': '3306',
     }
 }
